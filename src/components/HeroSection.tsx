@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -25,19 +26,19 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <a
-              href="#vault"
+            <Link
+              to="/vault"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-opacity glow"
             >
               Enter the Vault
               <ArrowDown className="h-4 w-4" />
-            </a>
-            <a
-              href="#methodology"
+            </Link>
+            <Link
+              to="/vault#methodology"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg border border-border text-foreground font-medium text-base hover:bg-secondary transition-colors"
             >
               Learn the Method
-            </a>
+            </Link>
           </div>
         </div>
       </div>

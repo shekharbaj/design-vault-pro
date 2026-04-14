@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Vault } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -17,25 +19,35 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <a href="/" className="flex items-center gap-2.5">
+        <Link to="/" className="flex items-center gap-2.5">
           <Vault className="h-6 w-6 text-primary" />
           <span className="text-lg font-semibold tracking-tight text-foreground">
             Nexus Design Vault
           </span>
-        </a>
+        </Link>
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#methodology" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link
+            to="/vault#methodology"
+            className={`text-sm transition-colors ${
+              location.pathname === "/vault" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
             Methodology
-          </a>
-          <a href="#vault" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          </Link>
+          <Link
+            to="/vault#vault"
+            className={`text-sm transition-colors ${
+              location.pathname === "/vault" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
             The Vault
-          </a>
-          <a
-            href="#vault"
+          </Link>
+          <Link
+            to="/vault"
             className="text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
           >
             Enter the Vault
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
