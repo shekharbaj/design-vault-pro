@@ -721,6 +721,213 @@ export const problems: Problem[] = [
     context: "Technology can help seniors live independently longer, but 42% of seniors say technology is too complicated. Families install devices seniors never use.",
     persona: { name: "Eleanor Price", age: 82, role: "Independent Senior Living Alone", bio: "Eleanor's children bought her a tablet, smart watch, and video doorbell. She uses none of them.", goals: ["Stay in her home safely", "Communicate with family easily", "Not feel incompetent"], frustrations: ["Too many devices and passwords", "Instructions assume tech knowledge", "Feels like technology is replacing human contact"] },
     constraints: ["Single-device simplicity", "No passwords to remember", "Human support available", "Gradual feature introduction"]
+  },
+  {
+    id: "gov-001",
+    hmw: "How might we make public transit schedules understandable for non-native speakers?",
+    category: "Government",
+    difficulty: "Beginner",
+    context: "Cities with diverse immigrant populations see low public transit adoption partly due to confusing schedules and signage available only in one language.",
+    persona: { name: "Fatima Al-Rashid", age: 34, role: "Recent Immigrant and Factory Worker", bio: "Fatima moved from Syria and relies on buses to commute. She often misses connections due to confusing route maps.", goals: ["Get to work on time", "Navigate transfers confidently", "Help her children use transit independently"], frustrations: ["Signs are only in English", "Route changes aren't communicated clearly", "Apps require credit cards she doesn't have"] },
+    constraints: ["Multilingual support for 5+ languages", "Works offline", "No account required", "Low-literacy friendly"]
+  },
+  {
+    id: "gov-002",
+    hmw: "How might we increase citizen participation in local government budget decisions?",
+    category: "Government",
+    difficulty: "Intermediate",
+    context: "Participatory budgeting gives citizens a say, but turnout is below 5% in most cities. Meetings are held at inconvenient times and materials are dense.",
+    persona: { name: "Derek Washington", age: 29, role: "Community Organizer", bio: "Derek believes in civic engagement but can't convince neighbors the process matters. Most think it's performative.", goals: ["Increase participation 10x", "Make budget data accessible", "Show residents their votes matter"], frustrations: ["PDFs with 200-page budgets", "No feedback loop after voting", "Only retirees attend meetings"] },
+    constraints: ["Mobile-first", "Results visible within 48 hours", "Accessible in public libraries", "No jargon"]
+  },
+  {
+    id: "gov-003",
+    hmw: "How might we help small business owners navigate permit applications without hiring consultants?",
+    category: "Government",
+    difficulty: "Advanced",
+    context: "Starting a business requires permits from multiple agencies. The average small business spends $12,000 on compliance consulting in year one.",
+    persona: { name: "Rosa Martinez", age: 41, role: "Aspiring Restaurant Owner", bio: "Rosa is a talented chef trying to open her first restaurant. The permit process has taken 8 months and counting.", goals: ["Open her restaurant within budget", "Understand requirements clearly", "Track application status"], frustrations: ["Each agency has different forms", "Requirements change without notice", "Phone lines have 2-hour waits"] },
+    constraints: ["Integrates with existing agency systems", "Step-by-step guidance", "Real-time status tracking", "Bilingual support"]
+  },
+  {
+    id: "rt-001",
+    hmw: "How might we reduce food waste in restaurant kitchens without adding prep complexity?",
+    category: "Retail & Commerce",
+    difficulty: "Intermediate",
+    context: "Restaurants waste 30-40% of purchased food. Kitchen staff are too busy to track waste, and existing solutions require manual logging.",
+    persona: { name: "Chef Andre Dubois", age: 38, role: "Executive Chef at a Mid-Range Restaurant", bio: "Andre cares about sustainability but his team of 6 is stretched thin during service. He needs solutions that don't slow the kitchen.", goals: ["Cut food costs by 15%", "Reduce waste without adding labor", "Track patterns automatically"], frustrations: ["Logging waste takes time nobody has", "Inventory systems don't match real usage", "Staff forget to rotate stock"] },
+    constraints: ["Works in humid/greasy kitchen environment", "No additional staff training beyond 30 min", "Integrates with POS", "Under $200/month"]
+  },
+  {
+    id: "rt-002",
+    hmw: "How might we help brick-and-mortar stores compete with same-day delivery from online retailers?",
+    category: "Retail & Commerce",
+    difficulty: "Advanced",
+    context: "Local retailers lose 23% of sales to online competitors offering same-day delivery. Most lack the logistics infrastructure to match.",
+    persona: { name: "Priya Kapoor", age: 45, role: "Owner of a Family Hardware Store", bio: "Priya's store has served the community for 20 years but revenue dropped 30% since a major online retailer opened a distribution center nearby.", goals: ["Match online delivery speeds", "Leverage local expertise as advantage", "Keep costs manageable"], frustrations: ["Can't afford fleet of drivers", "Website gets little traffic", "Customers browse in-store then buy online"] },
+    constraints: ["Budget under $500/month", "Works with existing inventory", "Covers 15-mile radius", "Same-day fulfillment"]
+  },
+  {
+    id: "mn-001",
+    hmw: "How might we help factory workers report safety concerns without fear of retaliation?",
+    category: "Manufacturing",
+    difficulty: "Intermediate",
+    context: "OSHA estimates 50% of workplace injuries go unreported. Workers fear job loss, especially in at-will employment states.",
+    persona: { name: "Carlos Vega", age: 33, role: "Assembly Line Worker", bio: "Carlos noticed a machine guard is loose but his supervisor dismissed it. Last month a coworker was injured on a similar machine.", goals: ["Report hazards safely", "See action taken on reports", "Protect his job"], frustrations: ["Anonymous hotline isn't truly anonymous", "Supervisor controls his schedule", "HR seems aligned with management"] },
+    constraints: ["Truly anonymous reporting", "Works on basic smartphones", "Available in Spanish", "Tamper-proof records"]
+  },
+  {
+    id: "mn-002",
+    hmw: "How might we reduce onboarding time for new manufacturing employees from 6 weeks to 2?",
+    category: "Manufacturing",
+    difficulty: "Advanced",
+    context: "Manufacturing faces a skilled labor shortage. Long onboarding periods cost $15,000 per employee and many quit before completing training.",
+    persona: { name: "Tamika Johnson", age: 26, role: "New CNC Machine Operator", bio: "Tamika was excited about her new job but after 3 weeks of classroom training she still hasn't touched a machine. She's considering leaving.", goals: ["Learn by doing", "Feel productive quickly", "Understand safety protocols intuitively"], frustrations: ["Training manuals are 400 pages", "Classroom sessions are boring", "No hands-on practice until week 4"] },
+    constraints: ["Safety cannot be compromised", "Works alongside production", "Measurable competency checkpoints", "Supports different learning speeds"]
+  },
+  {
+    id: "sp-001",
+    hmw: "How might we help amateur athletes track recovery as seriously as they track performance?",
+    category: "Sports & Fitness",
+    difficulty: "Beginner",
+    context: "Weekend warriors and amateur athletes obsess over performance metrics but ignore recovery, leading to overtraining injuries that sideline them for months.",
+    persona: { name: "Jake Morrison", age: 31, role: "Amateur Marathon Runner and Software Developer", bio: "Jake runs 50 miles a week while working full-time. He tracks every run but ignores sleep and nutrition. He's had two stress fractures.", goals: ["Run a sub-3-hour marathon", "Stay injury-free", "Balance training with work"], frustrations: ["Recovery feels like wasted time", "Too many apps for different metrics", "Doesn't know when to rest vs push through"] },
+    constraints: ["Single dashboard for all metrics", "Integrates with running watches", "Evidence-based recommendations", "No subscription fatigue"]
+  },
+  {
+    id: "sp-002",
+    hmw: "How might we make youth sports more inclusive for children with physical disabilities?",
+    category: "Sports & Fitness",
+    difficulty: "Intermediate",
+    context: "Only 1 in 5 children with disabilities participates in organized sports. Most leagues lack adaptive programs, and parents don't know what's available.",
+    persona: { name: "Lisa Chen", age: 39, role: "Mother of a Child with Cerebral Palsy", bio: "Lisa's son Marcus loves basketball but every league they've tried treats him as an afterthought. She drives 45 minutes to the nearest adaptive program.", goals: ["Find local adaptive sports easily", "Ensure coaches are trained", "Help Marcus make friends through sports"], frustrations: ["Programs are scattered and poorly advertised", "Coaches don't know how to adapt activities", "Other parents are uncomfortable"] },
+    constraints: ["Searchable by disability type and location", "Coach training resources included", "Parent community features", "Free for families"]
+  },
+  {
+    id: "tr-001",
+    hmw: "How might we help solo travelers feel safe while exploring unfamiliar cities?",
+    category: "Travel",
+    difficulty: "Beginner",
+    context: "Solo travel is growing 40% year-over-year, but safety concerns—especially for women and LGBTQ+ travelers—limit where and how people explore.",
+    persona: { name: "Aisha Nkemelu", age: 27, role: "Solo Female Traveler and Freelance Photographer", bio: "Aisha travels to capture street photography. She's been followed twice and harassed once. She now avoids exploring after dark.", goals: ["Explore confidently at any hour", "Connect with trusted locals", "Share location with someone she trusts"], frustrations: ["Safety apps are reactive, not preventive", "Travel forums give outdated advice", "Hotel staff don't know neighborhood-level safety"] },
+    constraints: ["Works without data connection", "No social media account required", "Community-verified safety data", "Panic button feature"]
+  },
+  {
+    id: "tr-002",
+    hmw: "How might we reduce the environmental impact of tourism on fragile ecosystems?",
+    category: "Travel",
+    difficulty: "Advanced",
+    context: "Overtourism damages coral reefs, hiking trails, and historic sites. Visitor caps help but frustrate travelers who planned trips around specific destinations.",
+    persona: { name: "Dr. Kai Nakamura", age: 44, role: "Marine Biologist and Tourism Board Advisor", bio: "Kai watches 500 daily snorkelers destroy the reef he studies. He needs to balance conservation with the island's economic dependence on tourism.", goals: ["Reduce reef damage by 50%", "Maintain tourism revenue", "Educate visitors effectively"], frustrations: ["Visitor caps are politically impossible", "Educational signage is ignored", "Tour operators prioritize volume over sustainability"] },
+    constraints: ["Revenue-neutral for local economy", "Measurable ecological impact", "Visitor satisfaction maintained", "Scalable to other ecosystems"]
+  },
+  {
+    id: "lg-001",
+    hmw: "How might we help tenants understand their lease agreements without legal expertise?",
+    category: "Legal",
+    difficulty: "Beginner",
+    context: "68% of renters sign leases they don't fully understand. Hidden clauses about fees, maintenance responsibilities, and termination catch tenants off guard.",
+    persona: { name: "Jordan Davis", age: 23, role: "First-Time Renter and College Graduate", bio: "Jordan just signed a lease for his first apartment. He didn't realize he's responsible for pest control costs until roaches appeared.", goals: ["Understand every clause before signing", "Know his rights as a tenant", "Compare lease terms across apartments"], frustrations: ["Legal language is impenetrable", "Can't afford a lawyer for a lease review", "Landlords rush the signing process"] },
+    constraints: ["Plain-language summaries", "State-specific legal accuracy", "Free tier available", "Highlights unusual clauses"]
+  },
+  {
+    id: "lg-002",
+    hmw: "How might we help small claims court filers navigate the process without an attorney?",
+    category: "Legal",
+    difficulty: "Intermediate",
+    context: "Small claims courts handle disputes under $10,000 but the filing process confuses most people. 40% of valid claims are dismissed due to procedural errors.",
+    persona: { name: "Vanessa Park", age: 37, role: "Freelance Designer Owed $4,500", bio: "A client refused to pay Vanessa for completed work. She wants to file in small claims court but doesn't know where to start.", goals: ["File her claim correctly the first time", "Understand what evidence to bring", "Feel prepared for the hearing"], frustrations: ["Court website is a maze of PDFs", "Filing deadlines are confusing", "Doesn't know courtroom etiquette"] },
+    constraints: ["Step-by-step guided workflow", "Jurisdiction-specific forms", "Evidence checklist generator", "Hearing preparation guide"]
+  },
+  {
+    id: "np-001",
+    hmw: "How might we help nonprofit donors see the tangible impact of their contributions?",
+    category: "Social Impact",
+    difficulty: "Beginner",
+    context: "Donor retention drops below 45% after the first gift. Most donors stop giving because they never see what their money accomplished.",
+    persona: { name: "Margaret O'Brien", age: 58, role: "Retired Nurse and Monthly Donor", bio: "Margaret donates $50/month to three charities. She gets thank-you emails but never learns what her money did. She's considering stopping.", goals: ["See specific outcomes from her donations", "Feel connected to beneficiaries", "Know her money is well-spent"], frustrations: ["Generic thank-you emails", "Annual reports are vague", "No way to choose where money goes"] },
+    constraints: ["Privacy-safe beneficiary stories", "Real-time impact updates", "Works for organizations of all sizes", "Low admin overhead"]
+  },
+  {
+    id: "np-002",
+    hmw: "How might we help volunteers find opportunities that match their specific skills?",
+    category: "Social Impact",
+    difficulty: "Intermediate",
+    context: "Nonprofits need skilled volunteers (designers, accountants, developers) but most volunteer platforms only list manual labor opportunities.",
+    persona: { name: "Ryan Cho", age: 30, role: "UX Designer Wanting to Give Back", bio: "Ryan has 8 years of design experience and wants to volunteer his skills, but every opportunity he finds involves sorting canned goods.", goals: ["Use his professional skills for good", "Find flexible remote opportunities", "Build portfolio pieces while helping"], frustrations: ["Platforms don't filter by skill type", "Organizations don't know how to use designers", "Time commitments are vague"] },
+    constraints: ["Skill-based matching algorithm", "Project scope clearly defined", "Time estimate accuracy", "Portfolio-ready deliverables"]
+  },
+  {
+    id: "ag-001",
+    hmw: "How might we help small-scale farmers access fair market prices without middlemen?",
+    category: "Agriculture",
+    difficulty: "Advanced",
+    context: "Smallholder farmers receive only 10-25% of the retail price. Middlemen control market access, and farmers lack price transparency.",
+    persona: { name: "Ibrahim Mwangi", age: 48, role: "Coffee Farmer in Rural Kenya", bio: "Ibrahim grows premium coffee but sells it to a broker for $1.20/kg while it retails for $25/kg in Europe. He has no direct buyer access.", goals: ["Sell directly to roasters", "Know real-time market prices", "Coordinate with neighboring farmers for volume"], frustrations: ["No internet at the farm", "Brokers set prices take-it-or-leave-it", "Quality certifications are expensive"] },
+    constraints: ["Works via SMS/USSD", "No smartphone required", "Cooperative-friendly", "Multilingual support"]
+  },
+  {
+    id: "ag-002",
+    hmw: "How might we help urban apartment dwellers grow meaningful amounts of food?",
+    category: "Agriculture",
+    difficulty: "Beginner",
+    context: "Urban gardening interest surged 300% but most apartment dwellers abandon their gardens within 3 months due to space constraints and plant deaths.",
+    persona: { name: "Sophie Laurent", age: 28, role: "Apartment Dweller and Sustainability Enthusiast", bio: "Sophie has a north-facing balcony and killed three basil plants. She wants to grow food but doesn't know what works in limited light.", goals: ["Grow enough herbs and greens to reduce grocery trips", "Keep plants alive", "Maximize tiny balcony space"], frustrations: ["Generic advice doesn't account for her conditions", "Seed packets assume garden-sized spaces", "Watering schedules are confusing"] },
+    constraints: ["Personalized to light and space conditions", "Beginner-proof plant recommendations", "Seasonal reminders", "Community support features"]
+  },
+  {
+    id: "re-001",
+    hmw: "How might we help first-time homebuyers understand the true cost of homeownership?",
+    category: "Real Estate",
+    difficulty: "Intermediate",
+    context: "46% of first-time buyers are surprised by costs beyond the mortgage. Property taxes, insurance, maintenance, and HOA fees catch them off guard.",
+    persona: { name: "David and Sarah Kim", age: 32, role: "Married Couple Saving for First Home", bio: "The Kims saved $60,000 and think they can afford a $350,000 home. They haven't factored in PMI, property tax increases, or a new roof in 5 years.", goals: ["Know exactly what they can truly afford", "Avoid financial surprises", "Compare neighborhoods holistically"], frustrations: ["Mortgage calculators only show principal and interest", "Agents downplay costs to close deals", "Every friend gives different advice"] },
+    constraints: ["Includes ALL ownership costs", "Location-specific tax data", "5-year projection model", "No realtor bias"]
+  },
+  {
+    id: "mu-001",
+    hmw: "How might we help independent musicians monetize their work without giving up creative control?",
+    category: "Entertainment",
+    difficulty: "Intermediate",
+    context: "Streaming pays artists $0.003-0.005 per play. Independent musicians need 250,000 monthly streams to earn minimum wage from streaming alone.",
+    persona: { name: "Luna Reyes", age: 25, role: "Independent Singer-Songwriter", bio: "Luna has 15,000 dedicated fans but earns only $400/month from streaming. She's considering quitting music for a stable job.", goals: ["Earn a living from music", "Maintain artistic independence", "Deepen fan relationships"], frustrations: ["Algorithms favor major labels", "Fan engagement tools are scattered", "Merch requires upfront investment she can't afford"] },
+    constraints: ["No upfront costs for artist", "Direct fan-to-artist payments", "Integrates with existing platforms", "Analytics that matter for independents"]
+  },
+  {
+    id: "en-001",
+    hmw: "How might we help households reduce energy consumption without sacrificing comfort?",
+    category: "Sustainability",
+    difficulty: "Beginner",
+    context: "Residential energy use accounts for 20% of US emissions. Smart thermostats help but 73% of owners never program them beyond default settings.",
+    persona: { name: "Tom and Rachel Bennett", age: 45, role: "Suburban Family of Four", bio: "The Bennetts installed a smart thermostat, solar panels, and LED bulbs but their energy bill barely changed. They don't know what else to try.", goals: ["Reduce energy bill by 30%", "Understand where energy goes", "Make it easy for the whole family"], frustrations: ["Smart home devices don't talk to each other", "Can't tell which appliance wastes energy", "Kids leave everything on"] },
+    constraints: ["Works with existing devices", "Family-friendly interface", "Gamification for kids", "Privacy-respecting energy monitoring"]
+  },
+  {
+    id: "hr-001",
+    hmw: "How might we help remote teams build genuine interpersonal connections?",
+    category: "Workplace",
+    difficulty: "Intermediate",
+    context: "65% of remote workers feel disconnected from colleagues. Virtual happy hours and forced fun activities have a 70% dislike rate.",
+    persona: { name: "Mei-Lin Zhang", age: 34, role: "Engineering Manager Leading a Distributed Team", bio: "Mei-Lin's team of 12 spans 4 time zones. She notices silos forming and junior engineers aren't getting mentorship organically.", goals: ["Build genuine team bonds", "Facilitate organic mentorship", "Reduce isolation without adding meetings"], frustrations: ["Virtual events feel forced", "No watercooler moments online", "Cultural differences make small talk awkward"] },
+    constraints: ["Async-friendly for time zones", "Not another meeting", "Culturally sensitive", "Measurable engagement without surveillance"]
+  },
+  {
+    id: "hr-002",
+    hmw: "How might we help hiring managers reduce unconscious bias in resume screening?",
+    category: "Workplace",
+    difficulty: "Advanced",
+    context: "Studies show identical resumes with 'ethnic-sounding' names receive 50% fewer callbacks. Blind resume screening helps but removes context needed for good decisions.",
+    persona: { name: "Patricia Holmes", age: 52, role: "VP of Talent at a Fortune 500 Company", bio: "Patricia genuinely wants diverse hiring but her team screens 500 resumes per role. Time pressure defaults to pattern matching that favors familiar backgrounds.", goals: ["Increase diverse hires by 40%", "Maintain hiring quality", "Make the process fair and efficient"], frustrations: ["Blind screening loses too much context", "AI tools have their own biases", "Hiring managers resist process changes"] },
+    constraints: ["Reduces bias without reducing information", "Integrates with existing ATS", "Auditable fairness metrics", "Gradual adoption path"]
+  },
+  {
+    id: "pet-001",
+    hmw: "How might we help pet owners manage chronic conditions in aging pets affordably?",
+    category: "Healthcare",
+    difficulty: "Intermediate",
+    context: "Veterinary costs rose 30% in 5 years. 28% of pet owners delay or skip vet visits due to cost, leading to worse outcomes and higher eventual bills.",
+    persona: { name: "Grace Okafor", age: 40, role: "Single Mother with an Aging Labrador", bio: "Grace's dog Max has arthritis and early kidney disease. Monthly vet costs exceed $300 and she's already cut her own expenses to the bone.", goals: ["Keep Max comfortable affordably", "Understand which treatments are essential vs optional", "Plan for future costs"], frustrations: ["Vet bills are unpredictable", "Can't tell if expensive treatments are necessary", "Pet insurance doesn't cover pre-existing conditions"] },
+    constraints: ["Cost transparency", "Prioritized treatment recommendations", "Telemedicine option for check-ins", "Payment plan integration"]
   }
 ];
 
