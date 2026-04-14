@@ -36,14 +36,6 @@ const Navbar = () => {
           </Link>
           <Link
             to="/vault"
-            className={`text-sm transition-colors ${
-              location.pathname === "/vault" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            The Vault
-          </Link>
-          <Link
-            to="/vault"
             className="text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
           >
             Enter the Vault
