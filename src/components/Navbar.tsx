@@ -27,15 +27,15 @@ const Navbar = () => {
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            to="/vault#methodology"
+            to="/methodology"
             className={`text-sm transition-colors ${
-              location.pathname === "/vault" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              location.pathname === "/methodology" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Methodology
           </Link>
           <Link
-            to="/vault#vault"
+            to="/vault"
             className={`text-sm transition-colors ${
               location.pathname === "/vault" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
             }`}

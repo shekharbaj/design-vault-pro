@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
-import VaultSection from "@/components/VaultSection";
+import MethodologySection from "@/components/MethodologySection";
 
-const VaultPage = () => {
+const MethodologyPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <div className="pt-16">
-        <VaultSection />
+        <MethodologySection />
       </div>
       <footer className="border-t border-border py-12">
         <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
@@ -17,4 +17,4 @@ const VaultPage = () => {
   );
 };
 
-export default VaultPage;
+export default MethodologyPage;

@@ -34,7 +34,7 @@ const HeroSection = () => {
               <ArrowDown className="h-4 w-4" />
             </Link>
             <Link
-              to="/vault#methodology"
+              to="/methodology"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg border border-border text-foreground font-medium text-base hover:bg-secondary transition-colors"
             >
               Learn the Method
