@@ -1487,6 +1487,166 @@ export const problems: Problem[] = [
       frustrations: ["Reverse image search finds her work everywhere without credit", "DMCA takedowns are whack-a-mole", "Legal help is priced for corporations"]
     },
     constraints: ["Must be affordable for creators earning under $50K", "Must handle multiple types of IP", "Must provide actionable enforcement options", "Must not require legal expertise to use"]
+  },
+  {
+    id: "hc-200",
+    hmw: "How might we help diabetic patients adhere to insulin schedules while traveling?",
+    category: "Healthcare",
+    difficulty: "Intermediate",
+    context: "Traveling disrupts insulin routines due to time zones, meal changes, and storage challenges. Diabetic travelers risk dangerous blood sugar fluctuations.",
+    persona: {
+      name: "Kevin Bridges",
+      age: 55,
+      role: "Sales Executive with Type 1 Diabetes",
+      bio: "Kevin travels 3 weeks per month across time zones. His insulin schedule gets disrupted constantly and he's had two hypoglycemic episodes on planes.",
+      goals: ["Maintain stable blood sugar while traveling", "Adjust insulin timing for time zones automatically", "Store insulin properly in varied conditions"],
+      frustrations: ["Insulin pens overheat in checked luggage", "Time zone math for dosing is error-prone", "TSA screening adds stress"]
+    },
+    constraints: ["Must handle multiple time zones", "Must work offline during flights", "Must comply with medical device regulations", "Must integrate with CGM devices"]
+  },
+  {
+    id: "ft-200",
+    hmw: "How might we help young adults understand and improve their credit scores?",
+    category: "FinTech",
+    difficulty: "Beginner",
+    context: "Young adults don't understand credit scores until they need one. By then, mistakes have already been made. Credit education is reactive, not proactive.",
+    persona: {
+      name: "Jasmine Cooper",
+      age: 23,
+      role: "Recent Graduate Denied Her First Apartment",
+      bio: "Jasmine was denied an apartment because of her thin credit file. She has no debt but also no credit history. She doesn't understand why having no debt is a problem.",
+      goals: ["Build credit from zero", "Understand what actions affect her score", "Get approved for an apartment"],
+      frustrations: ["Credit score apps show the number but not what to do", "Secured cards require deposits she can't afford", "Contradictory advice online"]
+    },
+    constraints: ["Must not encourage unnecessary debt", "Must explain scoring factors simply", "Must be free", "Must comply with FCRA"]
+  },
+  {
+    id: "ed-200",
+    hmw: "How might we make standardized test prep equitable across income levels?",
+    category: "EdTech",
+    difficulty: "Intermediate",
+    context: "Wealthy families spend $5K+ on SAT/ACT prep while low-income students rely on free resources of varying quality. The test prep industry widens achievement gaps.",
+    persona: {
+      name: "Ms. Carmen Reyes",
+      age: 40,
+      role: "High School Guidance Counselor at a Title I School",
+      bio: "Carmen's students can't afford Kaplan or Princeton Review. Free online prep is overwhelming and unstructured. Her students score 200+ points below the district average.",
+      goals: ["Give her students prep quality equal to wealthy peers", "Provide structured study plans", "Track student progress and intervene early"],
+      frustrations: ["Free resources lack personalization", "Students don't have quiet study spaces at home", "Volunteer tutors are unreliable"]
+    },
+    constraints: ["Must be completely free for students", "Must work on school Chromebooks", "Must not require home internet for core features", "Must provide teacher dashboards"]
+  },
+  {
+    id: "st-200",
+    hmw: "How might we incentivize businesses to reduce packaging without hurting product protection?",
+    category: "Sustainability",
+    difficulty: "Intermediate",
+    context: "E-commerce packages use 40% more packaging than needed. Businesses over-package to prevent damage claims. No incentive exists to optimize.",
+    persona: {
+      name: "Lisa Park",
+      age: 36,
+      role: "Sustainability Manager at an E-Commerce Company",
+      bio: "Lisa's company ships 10,000 packages daily. She calculated they use 3x more bubble wrap than needed but operations won't change because damage claims cost more than excess packaging.",
+      goals: ["Reduce packaging waste by 50%", "Maintain or reduce damage rates", "Show cost savings to leadership"],
+      frustrations: ["Operations team prioritizes zero-damage over sustainability", "No data on which products actually need protection", "Sustainable packaging materials cost 30% more"]
+    },
+    constraints: ["Must not increase product damage rates", "Must show ROI within 6 months", "Must work with existing packing workflows", "Must comply with shipping carrier requirements"]
+  },
+  {
+    id: "ac-200",
+    hmw: "How might we make museum experiences meaningful for visitors with intellectual disabilities?",
+    category: "Accessibility",
+    difficulty: "Intermediate",
+    context: "Museums design for visual engagement but visitors with intellectual disabilities need multi-sensory, simplified, and supported experiences. Most museums offer no accommodations beyond wheelchair access.",
+    persona: {
+      name: "Program Director Sarah Mills",
+      age: 45,
+      role: "Director of Accessibility at a Natural History Museum",
+      bio: "Sarah wants her museum to welcome visitors of all cognitive abilities. Current exhibits use dense text and abstract concepts that exclude many visitors.",
+      goals: ["Create multi-sensory exhibit experiences", "Train staff in inclusive engagement", "Increase visitorship from disability communities"],
+      frustrations: ["Exhibit designers resist simplifying content", "No budget for separate accessible exhibits", "Staff feel unprepared to support diverse visitors"]
+    },
+    constraints: ["Must work within existing exhibit spaces", "Must not 'dumb down' content", "Must train existing staff, not hire specialists", "Must serve a wide range of cognitive abilities"]
+  },
+  {
+    id: "cx-200",
+    hmw: "How might we make airline rebooking less stressful during mass cancellations?",
+    category: "Customer Experience",
+    difficulty: "Advanced",
+    context: "When storms cancel hundreds of flights, thousands of passengers compete for limited rebooking options. Phone hold times exceed 4 hours. App rebooking shows no availability. Chaos ensues.",
+    persona: {
+      name: "Frequent Flyer David Park",
+      age: 45,
+      role: "Business Traveler with 100K Miles Annually",
+      bio: "David was stranded for 36 hours during a snowstorm. The app showed no flights. Phone wait was 6 hours. He watched gate agents manually rebook passengers while the app showed nothing.",
+      goals: ["Get rebooked quickly during disruptions", "See all options including partner airlines", "Get proactive notifications before cancellation"],
+      frustrations: ["App and phone show different availability", "Status benefits disappear during mass disruptions", "No transparency about rebooking priority"]
+    },
+    constraints: ["Must handle surge demand during mass events", "Must integrate across airline alliances", "Must prioritize fairly and transparently", "Must work when airport WiFi is overwhelmed"]
+  },
+  {
+    id: "hr-200",
+    hmw: "How might we help introverted employees thrive in open-office environments?",
+    category: "HR Tech",
+    difficulty: "Beginner",
+    context: "Open offices save money but reduce productivity for introverts by 30%. They need quiet focus time but feel pressure to be visibly collaborative. Noise-canceling headphones are a band-aid.",
+    persona: {
+      name: "Wei Zhang",
+      age: 30,
+      role: "Software Engineer in an Open-Plan Office",
+      bio: "Wei does his best work in silence but his desk is in a high-traffic area. He wears headphones all day but colleagues tap his shoulder constantly. He's considering quitting for a remote job.",
+      goals: ["Get 4+ hours of uninterrupted focus daily", "Signal availability without being antisocial", "Feel valued despite not being the loudest voice"],
+      frustrations: ["'Collaboration culture' means constant interruption", "Booking focus rooms requires a meeting invite", "Manager equates presence with productivity"]
+    },
+    constraints: ["Must work within existing office layouts", "Must not stigmatize introversion", "Must balance individual and team needs", "Must be implementable by team leads, not just HR"]
+  },
+  {
+    id: "rt-200",
+    hmw: "How might we help thrift stores manage inventory efficiently despite unpredictable donations?",
+    category: "Retail & Commerce",
+    difficulty: "Intermediate",
+    context: "Thrift stores receive random donations daily. Pricing, sorting, and displaying items is labor-intensive. High-value items get missed and fast fashion donations overwhelm storage.",
+    persona: {
+      name: "Store Manager Janet Williams",
+      age: 50,
+      role: "Manager of a Goodwill Location",
+      bio: "Janet's store receives 2,000 items daily. Her team of mostly volunteers must sort, price, and display everything. They miss valuable items and waste space on unsellable fast fashion.",
+      goals: ["Identify high-value items quickly", "Reduce time from donation to floor", "Manage storage overflow effectively"],
+      frustrations: ["Volunteers don't know brand values", "Pricing is inconsistent across shifts", "80% of fast fashion donations end up in landfill anyway"]
+    },
+    constraints: ["Must work for untrained volunteers", "Must be affordable for nonprofit budgets", "Must handle high volume quickly", "Must integrate with existing POS systems"]
+  },
+  {
+    id: "cv-200",
+    hmw: "How might we help elderly residents age in place safely without constant surveillance?",
+    category: "Civic & Workplace",
+    difficulty: "Intermediate",
+    context: "90% of seniors want to age at home but families worry about falls and emergencies. Monitoring systems feel invasive. The choice seems binary: independence or safety.",
+    persona: {
+      name: "Harold Jefferson",
+      age: 81,
+      role: "Retired Engineer Living Alone",
+      bio: "Harold's children want him in assisted living after he fell last year. He recovered fully but they installed cameras he hates. He values his privacy and independence fiercely.",
+      goals: ["Stay in his home safely", "Maintain privacy and dignity", "Have help available if needed without constant monitoring"],
+      frustrations: ["Feels surveilled in his own home", "Medical alert pendants are stigmatizing", "Children override his preferences out of fear"]
+    },
+    constraints: ["Must preserve autonomy and dignity", "Must detect genuine emergencies reliably", "Must minimize false alarms", "Must work without internet for basic functions"]
+  },
+  {
+    id: "ge-200",
+    hmw: "How might we make educational games engaging enough that kids choose them over entertainment games?",
+    category: "Gaming & Entertainment",
+    difficulty: "Advanced",
+    context: "Educational games have a fun problem\u2014kids play them when required but switch to Roblox when given a choice. The industry struggles to make learning genuinely entertaining.",
+    persona: {
+      name: "Game Designer Priya Mehta",
+      age: 33,
+      role: "Educational Game Designer at a Startup",
+      bio: "Priya has 10 years in AAA gaming and switched to edtech. Her math game teaches effectively but DAU drops 90% when kids aren't in school. She can't compete with games that have no learning objectives.",
+      goals: ["Create an educational game kids play voluntarily", "Maintain learning outcomes while maximizing fun", "Build social features that drive organic growth"],
+      frustrations: ["Schools want measurable outcomes, kids want fun", "Budget is 1/100th of entertainment games", "Parents buy educational games but kids don't play them"]
+    },
+    constraints: ["Must meet educational standards", "Must be engaging without exploitative mechanics", "Must work on school devices", "Must provide learning analytics for educators"]
   }
 ];
 
