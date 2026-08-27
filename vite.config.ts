@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   
   // Replace 'your-repository-name' with your actual GitHub repo name
-  base: "/design-vault-pro/", 
+  base: "https://shekharbaj.github.io/design-vault-pro/", 
   plugins: [react()],
   
   server: {
