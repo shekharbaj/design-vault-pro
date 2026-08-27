@@ -15,7 +15,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="https://shekharbaj.github.io/design-vault-pro/">
+      <BrowserRouter basename="/design-vault-pro/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/methodology" element={<MethodologyPage />} />
